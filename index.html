@@ -1,0 +1,169 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>CSS #3 Text Effects --- Satish Borkar.com</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">\
+  <!-- Google Web Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Paprika' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900' rel='stylesheet' type='text/css'>
+<!-- end CSS-->
+<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+<!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+       
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <header>
+	<h1>  CSS #3 Text Effects &#x2192; </h1>
+    </header>
+    <section>
+    	<p>Text shadow property allow us to to butify the text like photoshop. text-shadow formula can be define as follow</p>
+    	<code> text-shadow <b>:</b><span> horizontal-shadow[h-shadow]  vertical-shadow[v-shadow] blur-radius shadow-color</span>;  </code>
+    	<p><label>h-shadow </label>&#x2192; Horizontal offset of shadow( X-axis ). positive value show shadow to right side of the text &amp; negative value show shadow to left side of the text.   </p>
+    	<p><label>v-shadow </label>&#x2192; Vertical offset of shadow( Y-axis ). positive value show shadow to below the text &amp; negative value show shadow to labove the text.</p>
+    	<p><label>blur-radius </label>&#x2192; This is optional. if left blank default vaule is set to 0, blur radius define the how much &amp; how big the shadow should be blur.</p>
+    	 
+    </section>
+    <section class="txtPress-bg">
+    	<h1>TextPress in CSS 3</h1>
+    	<code>text-shadow <b>:</b> <span>0px 1px 1px #4d4d4d</span>; 
+    		color <b>:</b> <span>#222</span>;
+    	</code>
+    </section>
+    
+    
+     <section class="cloudyTxt">
+    	<h1>Cloudy Text in CSS 3</h1>
+    	<code>text-shadow <b>:</b> <span>0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3)</span>;<br />
+    color <b>:</b> <span>rgba(255,255,255,0)</span>;
+    	</code>
+    </section>
+    
+    <section class="embossedTxt">
+    	<h1>Embossed Text in CSS 3</h1>
+    	<code>text-shadow <b>:</b> <span>-1px -1px 1px #fff, 1px 1px 1px #000 </span>; 
+    		color <b>:</b> <span>#8F0222</span>;
+    		opacity <b>:</b> <span>0.3</span>;
+    	</code>
+    </section>
+    
+    
+    <section class="nightlihe">
+    	<h1>City Night text in CSS 3</h1>
+    	<code>text-shadow <b>:</b> <span>0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95</span>;<br /> 
+    		letter-spacing <b>:</b> <span>5px</span>;
+    	</code>
+    </section>
+    
+    <section class="textonFire">
+    	<h1>CSS 3 text on fire</h1>
+    	<code>text-shadow <b>:</b><br /> <span>
+    0px -1px 4px white, <br />
+    0px -2px 10px yellow, <br />
+    0px -10px 20px #ff8000, <br />
+    0px -18px 40px red,<br />
+    <br />
+    0px 1px 4px white,<br /> 
+    0px 2px 10px yellow, <br />
+    0px 10px 20px #ff8000, <br />
+    0px 18px 40px red,<br />
+    <br />
+    1px 0px 4px white,<br /> 
+    2px 0px 10px yellow, <br />
+    10px 0px 20px #ff8000, <br />
+    18px 0px 40px red,<br />
+    <br />
+    -1px 0px 4px white,<br /> 
+    -2px 0px 10px yellow, <br />
+    -10px 0px 20px #ff8000, <br />
+    -18px 0px 40px red
+    	</span>; 
+    		
+    	</code>
+    </section>
+    
+    
+    <section class="retroTxt">
+    	<h1>Retro Text in CSS 3</h1>
+    	<code>text-shadow <b>:</b> <span> 3px 3px 0px #222, 5px 5px 0px #378fe5</span>; 
+    		color <b>:</b> <span>#007ACE</span>;
+    	</code>
+    </section>
+    
+    <section class="threeDtext">
+    	<h1>[3D] Text in CSS 3...</h1>
+    	<code>text-shadow <b>:</b> <span> 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 0px #001135</span>; 
+    	</code>
+    </section>
+    <section class="skew3" style="height: 200px; text-align: center">
+    	<p>This is sample text for transform text</p> 
+    </section>
+	 
+    
+    
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
